@@ -1,0 +1,9 @@
+fun main() {
+    print("Informe o seu nome: ")
+    val nomeDoUsuario = readLine()
+
+    print("Informe sua idade: ")
+    val idade = readLine()
+
+    println("Olá, $nomeDoUsuario! Sua idade é $idade.")
+}
