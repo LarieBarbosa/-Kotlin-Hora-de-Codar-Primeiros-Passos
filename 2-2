@@ -1,0 +1,13 @@
+fun main() {
+    println("Digite o primeiro número: ")
+    val numero = readLine()!!. toInt()
+
+    if (numero > 0) {
+        println("Positivo")
+    } else if (numero < 0) {
+        println("Negativo")
+    } else {
+        println("Zero")
+    }
+
+}
