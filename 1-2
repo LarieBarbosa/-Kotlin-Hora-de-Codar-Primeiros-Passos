@@ -1,0 +1,5 @@
+fun main() {
+    print("Informe o seu nome: ")
+    val nomeDoUsuario = readLine()
+    println("Olá, $nomeDoUsuario.")
+}
