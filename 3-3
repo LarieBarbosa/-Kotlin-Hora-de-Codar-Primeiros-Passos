@@ -1,0 +1,16 @@
+fun main() {
+    var soma = 0
+    var quantidade = 0
+
+    for (numero in 15..100) {
+        soma = soma + numero
+        quantidade = quantidade + 1
+    }
+
+    val media = soma / quantidade.toDouble()
+
+    println("Soma: $soma")
+    println("Quantidade: $quantidade")
+    println("Média: $media")
+
+}
