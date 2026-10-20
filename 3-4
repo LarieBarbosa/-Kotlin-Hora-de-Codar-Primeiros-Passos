@@ -1,0 +1,25 @@
+fun main() {
+    println("Digite o primeiro inteiro:")
+    val primeiro = readLine()!!.toInt()
+
+    println("Digite o segundo inteiro, maior que o primeiro:")
+    val segundo = readLine()!!.toInt()
+
+    var soma = 0
+    var quantidade = 0
+
+    if (primeiro < segundo) {
+        for (numero in primeiro..segundo) {
+            soma = soma + numero
+            quantidade = quantidade + 1
+        }
+
+        val media = soma / quantidade.toDouble()
+
+        println("Soma: $soma")
+        println("Quantidade: $quantidade")
+        println("Média: $media")
+    } else {
+        println("O segundo número deve ser maior que o primeiro.")
+    }
+}
