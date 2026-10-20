@@ -1,0 +1,28 @@
+fun main() {
+    var aprovados = 0
+    var resposta = "S"
+
+    while (resposta == "S") {
+        println("Digite a primeira nota:")
+        val nota1 = readLine()!!.toDouble()
+
+        println("Digite a segunda nota:")
+        val nota2 = readLine()!!.toDouble()
+
+        val media = (nota1 + nota2) / 2
+
+        println("Média final: $media")
+
+        if (media >= 9.5) {
+            println("Aluno aprovado")
+            aprovados = aprovados + 1
+        } else {
+            println("Aluno reprovado")
+        }
+
+        println("Calcular a média de outro aluno? (S/N)")
+        resposta = readLine()!!
+    }
+
+    println("Quantidade de alunos aprovados: $aprovados")
+}
