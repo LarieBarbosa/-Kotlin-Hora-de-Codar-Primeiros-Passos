@@ -1,0 +1,13 @@
+fun main() {
+    println("Digite um número maior que zero:")
+    var n = readLine()!!.toInt()
+
+    while (n <= 0) {
+        println("Valor inválido. Digite um número maior que zero:")
+        n = readLine()!!.toInt()
+    }
+
+    for (numero in 1..n) {
+        println(numero)
+    }
+}
