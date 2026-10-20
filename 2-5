@@ -1,0 +1,19 @@
+fun main() {
+    var soma = 0
+    var contador = 1
+
+    while (contador <= 6) {
+        println("Digite o $contador número:")
+        val numero = readLine()!!.toInt()
+
+        println("Valor informado: $numero")
+        soma = soma + numero
+        contador = contador + 1
+    }
+
+    val media = soma / 6.0
+
+    println("A soma é: $soma")
+    println("A média é: $media")
+
+}
