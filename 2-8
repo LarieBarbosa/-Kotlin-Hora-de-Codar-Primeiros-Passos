@@ -1,0 +1,28 @@
+fun main() {
+    var soma = 0.0
+    var contador = 1
+
+    while (contador <= 4) {
+        println("Digite um número maior que 0 e menor que 10:")
+        val numero = readLine()!!.toDouble()
+
+        if (numero > 0 && numero < 10) {
+            soma = soma + numero
+            contador = contador + 1
+        } else {
+            println("Valor inválido. Digite novamente.")
+        }
+    }
+
+    val media = soma / 4
+
+    println("Média: $media")
+
+    if (media > 5) {
+        println("Você passou no teste")
+    } else {
+        println("Tente novamente")
+
+    }
+}
+
