@@ -1,0 +1,20 @@
+fun main() {
+    var soma = 0
+    var contador = 1
+
+    while (contador <= 6) {
+        println("Digite um número:")
+        val numero = readLine()!!.toInt()
+
+        println("Valor informado: $numero")
+
+        if (numero < 72) {
+            soma = soma + numero
+        }
+
+        contador = contador + 1
+    }
+
+    println("A soma dos valores menores que 72 é: $soma")
+
+}
