@@ -1,0 +1,23 @@
+fun main() {
+    var dentro = 0
+    var fora = 0
+    var contador = 1
+
+    while (contador <= 10) {
+        println("Digite o valor $contador:")
+        val numero = readLine()!!.toInt()
+
+        if (numero >= 24 && numero <= 42) {
+            dentro = dentro + 1
+            println("Dentro do intervalo")
+        } else {
+            fora = fora + 1
+            println("Fora do intervalo")
+        }
+
+        contador = contador + 1
+    }
+
+    println("Quantidade dentro: $dentro")
+    println("Quantidade fora: $fora")
+}
