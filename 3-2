@@ -1,0 +1,17 @@
+fun main() {
+    println("Digite o primeiro valor:")
+    val numero1 = readLine() !! .toDouble()
+
+    println("Digite o segundo valor:")
+    var numero2 = readLine()!! .toDouble()
+
+    while (numero2 <= 0) {
+        println("Digite um valor maior que zero:")
+        numero2 = readLine()!! .toDouble()
+    }
+
+    val divisao = numero1 / numero2
+
+    println("Resultado da divisão: $divisao")
+
+}
