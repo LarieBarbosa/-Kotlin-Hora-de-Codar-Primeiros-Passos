@@ -1,0 +1,14 @@
+fun main() {
+
+    println("Digite seu ano de nascimento:")
+    val nascimento = readLine()!!.toInt()
+    val idade = 2026 - nascimento
+    println("Sua idade é: $idade anos")
+
+    if (idade >= 16) {
+        println("Você pode votar!")
+
+        } else {
+            println("Você ainda não pode votar.")
+        }
+    }
